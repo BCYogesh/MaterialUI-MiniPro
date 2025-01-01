@@ -6,6 +6,7 @@ import Content from './components/Content';
 import RightBar from './components/RightBar';
 import Navbar from './components/Navbar';
 import { useState } from 'react';
+import FormikForm from './components/FormikForm';
 
 function App() {
 
@@ -18,20 +19,21 @@ function App() {
   })
 
   return (
-    <ThemeProvider theme={darkTheme}>
-      <Box bgcolor={"background.default"} color={"text.primary"}>
-        <Navbar displayMode={displayMode} setDisplayMode={setDisplayMode} />
-        <Container maxWidth='xl'>
-          <Stack direction='row' spacing={2} justifyContent='space-between'>
-            <Menu />
-            <Content />
-            <RightBar />
-          </Stack>
-        </Container>
+    // <ThemeProvider theme={darkTheme}>
+    //   <Box bgcolor={"background.default"} color={"text.primary"}>
+    //     <Navbar displayMode={displayMode} setDisplayMode={setDisplayMode} />
+    //     <Container maxWidth='xl'>
+    //       <Stack direction='row' spacing={2} justifyContent='space-between'>
+    //         <Menu />
+    //         <Content />
+    //         <RightBar />
+    //       </Stack>
+    //     </Container>
 
-      </Box>
+    //   </Box>
 
-    </ThemeProvider>
+    // </ThemeProvider>
+    <FormikForm />
   );
 
 }
